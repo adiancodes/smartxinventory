@@ -1,0 +1,147 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.register-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f8ff; /* Light background for the form side */
+}
+
+/* Left Info Panel (Blue) */
+.register-info-panel {
+    flex: 1;
+    background-color: #3498db; /* Blue color from image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.register-info-panel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.register-info-panel p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.login-button-link {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #ffffff;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+.login-button-link:hover {
+    background-color: #f0f8ff;
+    transform: translateY(-2px);
+}
+
+/* Right Form Panel (White) */
+.register-form-panel {
+    flex: 1.5; /* Give the form more space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow-y: auto; /* Allow scrolling if form is long */
+}
+
+.register-form-panel h3 {
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.register-form {
+    width: 100%;
+    max-width: 700px; /* Wider form for 2-column fields */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    flex-basis: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+.terms-group input {
+    margin-right: 0.75rem;
+}
+
+.register-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.register-button:hover {
+    background-color: #2980b9;
+}
+.register-button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}

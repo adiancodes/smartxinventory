@@ -1,0 +1,18 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f4f7f6; /* Light gray background for content */
+}
+
+.admin-main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-page-content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}

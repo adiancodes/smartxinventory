@@ -1,0 +1,123 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Left Panel (Dark) */
+.login-panel-left {
+    flex: 1;
+    background-color: #0d2c40; /* Darker blue from image */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    /* You would add your <img /> tag for the character here */
+}
+
+/* Right Panel (Yellow) */
+.login-panel-right {
+    flex: 1;
+    background-color: #f7b600; /* Yellow from image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+}
+
+.login-box h3 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #AAAAAA;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.need-help {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    font-size: 0.9rem;
+    color: #999;
+    text-decoration: none;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.login-button {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333; /* Dark button from image */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.login-button:hover {
+    background-color: #555;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+}
+
+.create-account-link {
+    color: #0d2c40; /* Match the dark panel */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
